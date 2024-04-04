@@ -288,17 +288,15 @@ ${'//'}${'#'} sourceMappingURL=data:application/json;base64,${base64Sourcemap}
       0: 0,
       1: 0,
       2: 0,
-      3: 0,
       4: 0,
       5: 0,
       6: 0
     })
   })
 
-  it('empty coverage for tsx files with plugin', async () => {
+  it('empty coverage for tsx files', async () => {
     const filename = require.resolve('./fixtures/scripts/ignore lines.tsx')
-    const plugin = require('../lib/plugin')
-    const v8ToIstanbul = new V8ToIstanbul(filename, undefined, undefined, undefined, plugin)
+    const v8ToIstanbul = new V8ToIstanbul(filename)
 
     await v8ToIstanbul.load()
     v8ToIstanbul.applyCoverage([{

@@ -1,6 +1,6 @@
 {
-  "name": "v8-to-istanbul",
-  "version": "9.2.0",
+  "name": "@second-life/v8-to-istanbul",
+  "version": "9.3.0",
   "description": "convert from v8 coverage format to istanbul's format",
   "main": "index.js",
   "types": "index.d.ts",
@@ -25,9 +25,10 @@
   "author": "Ben Coe <ben@npmjs.com>",
   "license": "ISC",
   "dependencies": {
-    "@jridgewell/trace-mapping": "^0.3.12",
-    "@types/istanbul-lib-coverage": "^2.0.1",
+    "@jridgewell/trace-mapping": "^0.3.25",
+    "@types/istanbul-lib-coverage": "^2.0.6",
     "convert-source-map": "^2.0.0",
+    "esbuild": "^0.20.2",
     "vlq": "^2.0.4"
   },
   "devDependencies": {
@@ -35,15 +36,12 @@
     "c8": "^7.2.1",
     "semver": "^7.3.2",
     "should": "13.2.3",
-    "source-map": "^0.7.3",
-    "standard": "^17.0.0",
+    "source-map": "^0.7.4",
+    "standard": "^17.1.0",
     "tap": "^16.0.0"
   },
-  "optionalDependencies": {
-    "esbuild": "^0.20.1"
-  },
   "engines": {
-    "node": ">=10.12.0"
+    "node": ">=18.0.0"
   },
   "files": [
     "lib/*.js",
