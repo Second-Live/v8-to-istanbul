@@ -1,5 +1,5 @@
 {
-  "name": "@second-life/v8-to-istanbul",
+  "name": "@anthony-redfox/v8-to-istanbul",
   "version": "9.3.0",
   "description": "convert from v8 coverage format to istanbul's format",
   "main": "index.js",
@@ -11,7 +11,10 @@
     "posttest": "standard",
     "coverage": "c8 report --check-coverage"
   },
-  "repository": "istanbuljs/v8-to-istanbul",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Second-Live/v8-to-istanbul.git"
+  },
   "keywords": [
     "istanbul",
     "v8",
@@ -32,9 +35,9 @@
     "vlq": "^2.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.12.4",
     "c8": "^7.2.1",
-    "semver": "^7.3.2",
+    "semver": "^7.6.0",
     "should": "13.2.3",
     "source-map": "^0.7.4",
     "standard": "^17.1.0",
@@ -47,5 +50,9 @@
     "lib/*.js",
     "index.js",
     "index.d.ts"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/Second-Live/v8-to-istanbul/issues"
+  },
+  "homepage": "https://github.com/Second-Live/v8-to-istanbul#readme"
 }
